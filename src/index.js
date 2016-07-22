@@ -1,10 +1,10 @@
-import 'core-js/fn/object/assign';
-import React from 'react';
+import 'core-js/fn/object/assign'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/Main';
+import App from './components/Main'
+import DynamicTable from './components/DynamicTable'
 
-module.exports = require('./components/DynamicTable')
-
+export default DynamicTable
 /*
 // Render the main component into the dom
 ReactDOM.render(
