@@ -4,8 +4,7 @@ import ReactDOM from 'react-dom'
 import App from './components/Main'
 import DynamicTable from './components/DynamicTable'
 
-require('./components/DynamicTable').default
-exports.default = DynamicTable
+export default class DTable extends DynamicTable{}
 /*
 // Render the main component into the dom
 ReactDOM.render(
