@@ -4,6 +4,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
 export class DynamicTable extends React.Component {
+  constructor(props){
+    super(props)
+  }
 
   getChildContext() {
       return { muiTheme: getMuiTheme(CeruleanTheme) }
@@ -40,6 +43,9 @@ DynamicTable.childContextTypes = {
 };
 
 class Row extends React.Component {
+  constructor(props){
+    super(props)
+  }
 
   render(){
     let row = [];
