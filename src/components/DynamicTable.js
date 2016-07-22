@@ -3,7 +3,7 @@ import CeruleanTheme from '../styles/Theme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
-class AppComponent extends React.Component {
+export class DynamicTable extends React.Component {
 
   getChildContext() {
       return { muiTheme: getMuiTheme(CeruleanTheme) }
@@ -35,12 +35,10 @@ class AppComponent extends React.Component {
   }
 }
 
-
-AppComponent.childContextTypes = {
+DynamicTable.childContextTypes = {
  muiTheme: React.PropTypes.object.isRequired
 };
 
-export default AppComponent;
 class Row extends React.Component {
 
   render(){
